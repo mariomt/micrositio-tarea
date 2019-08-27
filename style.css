@@ -8,17 +8,53 @@ h1{
 	line-height: 80px;
 }
 
+h2{
+	font-size: 48px;
+	margin-bottom: 30px;
+}
+
 p{
-	font-size: 18px;
-	color: #999999;
-	line-height: 1.8;
+	font-size: 20px;
+	color: rgba(26, 26, 26, 0.6);
+	line-height: 1.5;
 	margin-bottom: 0;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+section{
+	padding: 100px 0;
 }
 
 .topmargin-xs{ margin-top: 15px; }
 .topmargin-sm{ margin-top: 30px; }
 .topmargin-lg{ margin-top: 60px; }
 
+.btn{
+	font-size: 14px;
+	padding: 15px 26px;
+	min-width: 160px;
+	border-radius: 2px;
+	display: inline-block;
+}
+
+.btn i{
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+
+.btn-light{
+	background-color: #ffffff;
+	color: #1a1a1a;
+	border: 2px solid #ffffff; 
+}
+
+.btn-bold{
+	font-weight: 600;
+}
 
 
 .navbar{
@@ -39,12 +75,14 @@ p{
 	background-image: url('images/portada2.jpg');
 	background-size: cover;
 	padding-top: 90px;
+	margin-top:100px;
 	min-height: 600px;
 	color:#fff;
 }
 
 #hero p{
-	color: #ffffff;
+	color: #fff;
+	font-weight: 500;
 }
 
 .content-center{
@@ -52,3 +90,80 @@ p{
 	margin: 0 auto 60px auto;
 	text-align: center;
 }
+
+.portafolio-container{
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	margin: 10px 0;
+	border-radius: 2px;
+}
+
+.portafolio-container img{
+	max-width: 740px;
+	max-height: 600px;
+	-moz-transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	transition: all 0.8s;
+	/* -moz-transform: scale(0.8);
+	-webkit-transform:scale(0.8);
+	transform: scale(1.2) */
+}
+
+
+
+
+.portafolio-container:hover img{
+	-moz-transform: scale(1.2);
+	-webkit-transform:scale(1.2);
+	transform: scale(1.2)
+}
+
+.portafolio-details{
+	background-color: rgba(0,0,0, 0.6);
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	z-index:2;
+}
+
+.portafolio-details h2{
+	margin-bottom: 0px;
+}
+
+.portafolio-details a:hover{
+	cursor: default;
+}
+
+.portafolio-details a h2, .portafolio-details a p {
+	color: #ffffff;
+}
+
+hr{
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+}
+
+footer {
+	display: flex;
+	width: 100%;
+	min-height: 100px;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 575px) { 
+	h1 { font-size: 40px; line-height: normal;}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { }
